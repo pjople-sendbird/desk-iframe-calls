@@ -33,12 +33,6 @@ var DESK_AGENT;
 
 
 /**
- * This is the target user ID an Agent will call.
- * (this will be your customer on the other side of this ticket)
- */
-var CALL_TO_USER_ID = '';
-
-/**
  * SendBird main object
  */
 var sb;
@@ -138,7 +132,7 @@ function authorizeSignedUser() {
 */
 function makeCall() {
     const dialParams = {
-        userId: CALL_TO_USER_ID,
+        userId: DESK_CURRENT_TICKET.customer.sendbirdId,
         isVideoCall: true,
         callOption: {
             localMediaView: getVideoObjectCaller(),
@@ -244,11 +238,17 @@ function getTicketInfo(callback) {
         }
     }).then((response) => {
         DESK_CURRENT_TICKET = response.data;
+        console.dir(DESK_CURRENT_TICKET);
+        redrawMakeCallButton();
         callback(true);
     }).catch((error) => {
         console.dir(error);
         callback(false);
     })
+}
+
+function redrawMakeCallButton() {
+    document.getElementById('butMakeCall').innerHTML = 'Call ' + DESK_CURRENT_TICKET.customer.sendbirdId;
 }
 
 /**
@@ -298,6 +298,12 @@ if (DESK_CALLS_IFRAME) {
         })
     })
 }
+
+
+
+
+
+
 
 
 /**
@@ -357,3 +363,4 @@ function updateUIMakeCallCallConnected() {
 function toggleVisibility(id, show) {
     show ? getElement(id).show() : getElement(id).hide();
 }
+
