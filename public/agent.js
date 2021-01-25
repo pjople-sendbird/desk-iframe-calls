@@ -3,7 +3,7 @@
  * SENDBIRD CONFIG for your application with Calls support active.
  * Use your SendBird SDK configuration to connect and chat.
  */
-var APP_ID = 'D1CB1742-A4A3-44B9-9E7F-126D14BAB34B';
+var APP_ID = 'YOUR-APPLICATION-ID-WITH-SENDBIRD-CALLS-ENABLED';
 var USER_ID = '';           // This will be your Agent's User ID
 var ACCESS_TOKEN = null;    // Provide token if necessary.
 
@@ -12,9 +12,9 @@ var ACCESS_TOKEN = null;    // Provide token if necessary.
  * DESK VARIABLES AND ENTRYPONT
 */
 var URLPARAMS;
-const DESK_APP_ID = '2CF2337E-9BB5-4182-9853-255ACEB17D1D';
-const DESK_API_TOKEN = '4cb46baba67d6726a21cb35e1b2e11c49ca82307';
-const DESK_APP_API_TOKEN = '5e41bfcd46b2a4b17957eecf9acc919aed503aa6';
+const DESK_APP_ID = 'YOUR-APPLICATION-ID-WITH-DESK-FEATURE-ENABLED';
+const DESK_API_TOKEN = 'YOUR-DESK-API-TOKEN';
+const DESK_APP_API_TOKEN = 'YOUR-DESK-APP-API-TOKEN';
 
 /**
  * SendBird Desk Platform API
@@ -298,12 +298,6 @@ if (DESK_CALLS_IFRAME) {
         })
     })
 }
-
-
-
-
-
-
 
 
 /**
