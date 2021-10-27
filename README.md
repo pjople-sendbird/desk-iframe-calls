@@ -30,7 +30,7 @@ Once you have this file ready, run ```npm start``` to run the ```server.js``` fi
 
 Once the server is running, open a browser and navigate to ```http://localhost:9001/customer```. This will be the person creating a ticket.
 
-[![Customer running on localhost](https://github.com/warodri-sendbird/desk-iframe-calls/blob/84b0b4d72436e7cf96c8aa7c30290582cb0c9279/localhost_customer.png)
+[![Customer running on localhost](https://github.com/warodri-sendbird/desk-iframe-calls/blob/84b0b4d72436e7cf96c8aa7c30290582cb0c9279/localhost_customer.png)]
 
 
 
