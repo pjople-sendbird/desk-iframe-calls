@@ -21,11 +21,11 @@ const DESK_API_TOKEN = 'YOUR DESK TOKEN';
 
 ```
 
-```APP_ID``` is your Sendbird Application you can see from your Dashboard.
-```USER_ID``` it your SDK user ID to connect to. You can select any you want.
-```ACCESS_TOKEN``` any session or access token for this ```USER_ID```.
-```DESK_APP_ID``` is your Desk Application ID (it can be the same as ```APP_ID```)
-```DESK_API_TOKEN``` is your Desk Api token (you can get this information from your Dashboard, by selecting from the left menu: Settings >  Desk > Credentials)
+- ```APP_ID``` is your Sendbird Application you can see from your Dashboard.
+- ```USER_ID``` it your SDK user ID to connect to. You can select any you want.
+- ```ACCESS_TOKEN``` any session or access token for this ```USER_ID```.
+- ```DESK_APP_ID``` is your Desk Application ID (it can be the same as ```APP_ID```)
+- ```DESK_API_TOKEN``` is your Desk Api token (you can get this information from your Dashboard, by selecting from the left menu: Settings >  Desk > Credentials)
 
 Once you have this file ready, run ```npm start``` to run the ```server.js``` file. This server will listen in your port ```9001```.
 
