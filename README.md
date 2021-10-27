@@ -32,7 +32,16 @@ Once the server is running, open a browser and navigate to ```http://localhost:9
 
 ![Customer running on localhost](https://github.com/warodri-sendbird/desk-iframe-calls/blob/84b0b4d72436e7cf96c8aa7c30290582cb0c9279/localhost_customer.png)
 
+# Setting the IFRAME
+Your Desk account should have IFRAME integration enabled. Please contact sales if you need this to be activated in your Sendbird application. 
 
+Go to ```Settings``` > ```Desk``` > ```Integrations``` and enter the URL you want your agents to see in the ticket Dashboard.
+
+This URL must be available from the Internet. You cannot use any ```localhost``` addres. For this tutorial we will use ```ngrok``` to obtain a live URL based on our localhost server listening on port 9001.
+
+Remember to add ```/agent``` to the ```ngrok``` URL, since this is required according to our ```server.js``` file.
+
+![Adding an IFRAME](https://github.com/warodri-sendbird/desk-iframe-calls/blob/8c216eed77423a56b3dc7689b869fe058b1f73b4/iframe.png)
 
 
 
