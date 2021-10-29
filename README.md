@@ -65,6 +65,15 @@ This URL must be available from the Internet. You cannot use any ```localhost```
 
 ![Adding an IFRAME](https://github.com/warodri-sendbird/desk-iframe-calls/blob/8c216eed77423a56b3dc7689b869fe058b1f73b4/iframe.png)
 
+
+# Parameters you will receive 
+Sendbird Desk will send 3 parameters to the file inside the IFRAME. These parameters are:
+
+- ```agent_id``` : You receive the current Agent ID logged to Desk.
+- ```ticket_id``` : You receive the current ticket ID.
+- ```html_key``` : You receive this secret key to validate that this is a valid IFRAME from Sendbird and not from any place else. You can find this value in your Desk Dashboard, when setting up the IFRAME.
+
+
 If all goes, well, you should see a new IFRAME on the right side when viewing a ticket as a Desk Agent.
 
 
