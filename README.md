@@ -24,9 +24,6 @@ From inside ```customer.html``` and ```agent.html```, make sure the scripting fi
 And, at the bottom of the file:
 
 ```
-    <script>
-        var isCustomer = true;
-    </script>
     <script src="./index.js"></script>
 ```
 
