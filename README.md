@@ -61,7 +61,8 @@ Your Desk account should have IFRAME integration enabled. Please contact sales i
 
 Go to ```Settings``` > ```Desk``` > ```Integrations``` and enter the URL you want your agents to see in the ticket Dashboard.
 
-This URL must be available from the Internet. And the file you must call from inside this IFRAME is ```agent.html```
+This URL must be available from the Internet, since Desk must have access to it. 
+If you use this example, the file you must call from inside this IFRAME is ```agent.html```
 
 ![Adding an IFRAME](https://github.com/warodri-sendbird/desk-iframe-calls/blob/8c216eed77423a56b3dc7689b869fe058b1f73b4/iframe.png)
 
