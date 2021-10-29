@@ -27,6 +27,7 @@ const DESK_API_TOKEN = 'YOUR DESK TOKEN';
 - ```DESK_API_TOKEN``` is your Desk Api token (you can get this information from your Dashboard, by selecting from the left menu: Settings >  Desk > Credentials)
 
 Once you have this file ready, run ```npm start``` to run the ```server.js``` file. This server will listen in your port ```9001```.
+Do this for both ```customer.js``` and ```agent.js``` file.
 
 Once the server is running, open a browser and navigate to ```http://localhost:9001/customer```. This will be the person creating a ticket.
 
@@ -43,6 +44,7 @@ Remember to add ```/agent``` to the ```ngrok``` URL, since this is required acco
 
 ![Adding an IFRAME](https://github.com/warodri-sendbird/desk-iframe-calls/blob/8c216eed77423a56b3dc7689b869fe058b1f73b4/iframe.png)
 
+If all goes, well, you should see a new IFRAME on the right side when viewing a ticket as a Desk Agent.
 
 
 
